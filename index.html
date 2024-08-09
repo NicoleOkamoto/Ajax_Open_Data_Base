@@ -1,0 +1,72 @@
+<!-------w------------
+    
+    Assignment 4 Javascript
+    Name:Nicole Aline Okamot Goncalves 
+    Date: 04/05/2024
+    Description: Assignment 4 AJAX Using Open Data
+    
+--------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search for Amenities</title>
+    <!-- Script to include icons -->
+    <script src="https://kit.fontawesome.com/c7b560727f.js" crossorigin="anonymous"></script>
+    <!-- Script to sanitize input date -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.4/purify.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<h1>RECREATIONAL COMPLEXES IN THE CITY OF WINNIPEG</h1>
+
+<header>
+    <!-- Navigation links (if applicable) -->
+</header>
+
+<p>
+    Discover your preferred recreational complex today! Start by searching for
+    the amenities that suit your interests and lifestyle. Embark on your
+    journey to a healthier and more balanced lifestyle by exploring the
+    diverse array of recreational options available in the city of Winnipeg.
+    Search now and find your next adventure!
+</p>
+
+<!-- Search Form -->
+<div class="form-container">
+    <form class="search-form" id="search-form">
+        <label for="amenity" class="search-label">Search for amenities:</label>
+        <div class="input-group">
+            <input type="text"
+                   class="search-input"
+                   id="amenity"
+                   placeholder="Search for amenities like pools, libraries, and fitness centers."/>
+            <button type="submit" class="search-button">Search</button>
+        </div>
+    </form>
+
+    <!-- Links with search options href -->
+    <p class="suggestions">
+        Our platform offers access to a variety of leisure resources:
+        <a class="amenity-link" href="#" data-amenity="library">Library</a>,
+        <a class="amenity-link" href="#" data-amenity="fitness">Fitness Centre</a>,
+        <a class="amenity-link" href="#" data-amenity="skate">Skate Park</a>,
+        <a class="amenity-link" href="#" data-amenity="spray">Spray Pad</a>,
+        <a class="amenity-link" href="#" data-amenity="community center">Community Center</a>,
+        <a class="amenity-link" href="#" data-amenity="arena">Arena</a>,
+        <a class="amenity-link" href="#" data-amenity="indoor pool">Indoor Pool</a>,
+        <a class="amenity-link" href="#" data-amenity="outdoor pool">Outdoor Pool</a>,
+        <a class="amenity-link" href="#" data-amenity="wading pool">Wading Pool</a>,
+        <a class="amenity-link" href="#" data-amenity="spray pad">Spray Pad</a>,
+        <a class="amenity-link" href="#" data-amenity="indoor soccer">Indoor Soccer</a>
+    </p>
+</div>
+
+<div id="search-results"></div>
+<div id="complex-list"></div>
+<script src="script.js"></script>
+</body>
+</html>

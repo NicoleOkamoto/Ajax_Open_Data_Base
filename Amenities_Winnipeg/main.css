@@ -1,0 +1,160 @@
+/******w**************
+    
+    Assignment 4 Javascript
+    Name:Nicole Aline Okamot Goncalves 
+    Date: 04/05/2024
+    Description: Assignment 4 AJAX Using Open Data
+    
+*********************/
+
+/* Resetting default margin and padding for HTML elements */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting background color for HTML */
+html {
+    background-color: #fff;
+}
+
+/* Setting font family for body */
+body {
+    font-family: sans-serif;
+}
+
+/* Styling header */
+header {
+    background-color: #ccccccb5;
+    background-image: url("images/brydon-mccluskey-hDR8t7GMUCE-unsplash.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for rows */
+.row-container {
+    display: flex;
+    margin: 10px 30px;
+}
+
+.row-container:last-child {
+    display: flex-start;
+}
+
+
+/* Styling result containers */
+.result-container {
+    width: calc(25% - 10px);
+    min-height: 300px;
+    margin: 5px; 
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #051c32;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling form container */
+.form-container {
+    margin: 30px;
+    padding: 20px;
+    border: 1px solid #051c32;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling search form */
+.search-label {
+    font-size: large;
+    font-weight: bold;
+    color: #082f52;
+    margin-bottom: 10px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    flex: 2;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.search-button {
+    width: 30%;
+    padding: 12px;
+    background-color: #195690;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+.search-button:hover {
+color: #195690;
+background-color: #5988ff;
+font-weight: bolder;
+}
+
+/* Styling amenity links */
+.amenity-link {
+    text-decoration: none;
+    color: #195690;
+    font-weight: bold;
+}
+
+
+
+/* Styling list elements */
+ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 10px;
+}
+
+/* Styling headings */
+h1 {
+    text-align: center;
+    color: #002c55;
+    background-color: #ccccccb5;
+    margin: 0;
+    padding: 20px;
+}
+
+h2, h3, h4 {
+    margin: 0;
+}
+
+/* Styling paragraphs */
+p {
+    margin: 0px;
+    padding: 25px 45px;
+    background-color: #ccccccb5;
+    color: #082f52;
+    font-size: large;
+}
+
+/* Styling paragraphs */
+p.suggestions {
+    margin: 10px 0px;
+    padding: 10px;
+    background-color: #ccccccb5;
+    color: #082f52;
+    font-size: medium;
+}
