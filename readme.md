@@ -2,7 +2,7 @@
 
 This is a web application designed to help users find recreational complexes in the city of Winnipeg. The application allows users to search for amenities such as libraries, fitness centers, and parks. It fetches data from an open API, filters it based on user input, and displays the results dynamically.
 
-![Search for Amenities](./PHP_blog_mockup.png)
+![Search for Amenities](images/complexes_search.png)
 
 ## Features
 
@@ -10,6 +10,8 @@ This is a web application designed to help users find recreational complexes in 
 - **Dynamic Filtering:** The application filters and displays results based on the user's search input.
 - **Open Data Integration:** Utilizes the Winnipeg open data API to fetch and display data about recreational complexes.
 - **Input Sanitization and Validation:** Ensures all user inputs are sanitized and validated to prevent security issues.
+
+  ![Top search page](images/discover.png)
 
 ## Technologies Used
 
